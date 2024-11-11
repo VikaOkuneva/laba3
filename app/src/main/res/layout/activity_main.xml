@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5FFF2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:background="#B1D3B5"
+            app:srcCompat="@drawable/odin" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя: Виктория" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Возраст: 18" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:text="Профиль: Android-разработчик" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3D6D3F"
+                android:text="Фото"
+                app:rippleColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3D6D3F"
+                android:text="Проекты"
+                android:textColor="#FFFFFF"
+                app:rippleColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#3D6D3F"
+                android:text="Достижения"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/the" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/dva" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/fo" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/thest" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/faif" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="132dp"
+                    android:layout_height="132dp"
+                    app:srcCompat="@drawable/stm" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
